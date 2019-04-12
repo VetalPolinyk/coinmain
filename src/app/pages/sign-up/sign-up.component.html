@@ -1,0 +1,22 @@
+
+<div class="form col-md-8 offset-md-2 col-xl-4 offset-xl-4 col-lg-4 offset-lg-4">
+  <div class="ofForm pt-4 ">
+    <div class="inputs">
+      <input  [(ngModel)]="user.name" id="name" maxlength="30"  required name="name"    class="form-control" type="text" placeholder="Full name"     />
+      <input [(ngModel)]="user.email" maxlength="30" id="email"   class="form-control" type="email"  name="email" placeholder="Email" />
+      <input [(ngModel)]="user.age" maxlength="30" id="username"  name="username"   class="form-control" type="text" placeholder="Age" />
+      <input [(ngModel)]="user.password" maxlength="30" title="V12f" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"  name="password"  required   class="form-control" type={{typeInput}} placeholder="Password" />
+    </div>
+    <div class="log">
+      <button (click)="signUp()" class=" button join_now btn-block">REGISTER</button>
+      <div class="mt-3 blockDw">Clicking "Register" confirms you're age 18+.</div>
+      <div class="or">
+        <div class="wordOr">Or</div>
+      </div>
+    </div>
+    <div class="regis">
+      <div class="re"> <span class="no">Already have an account. </span><span title="Login"  routerLink="/sign-in" class="regisr">Login</span> </div>
+    </div>
+    <div class="error">{{errorRegister}}</div>
+  </div>
+</div>

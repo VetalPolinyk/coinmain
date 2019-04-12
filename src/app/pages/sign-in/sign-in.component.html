@@ -1,0 +1,23 @@
+
+<div class="page-login">
+
+  <div class="form allLOgin col-md-8 offset-md-2 col-xl-4 offset-xl-4 col-lg-4 offset-lg-4">
+    <div class="ofForm pt-4 ">
+
+      <div class="inputs">
+        <input [(ngModel)]="user.email" id="username" maxlength="30"   class="form-control" type="text" placeholder="Username" />
+        <input [(ngModel)]="user.password" id="password" maxlength="30"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" required   class="form-control" type={{typeInput}} placeholder="Password" />
+        <span    class="fa fa-fw  field-icon toggle-password">
+      </span>
+      </div>
+
+      <div class="log">
+        <button (click)="signIn()"  class="button join_now btn-block">LOGIN</button>
+      </div>
+      <div class="error">{{errorLogin}}</div>
+      <div class="regis">
+        <div class="re"> <span class="no">No account yet. </span><span routerLink="/sign-up" title="Register now" class="regisr">Register now</span> </div>
+      </div>
+    </div>
+  </div>
+</div>
