@@ -5,7 +5,7 @@
       <input  [(ngModel)]="user.name" id="name" maxlength="30"  required name="name"    class="form-control" type="text" placeholder="Full name"     />
       <input [(ngModel)]="user.email" maxlength="30" id="email"   class="form-control" type="email"  name="email" placeholder="Email" />
       <input [(ngModel)]="user.age" maxlength="30" id="username"  name="username"   class="form-control" type="text" placeholder="Age" />
-      <input [(ngModel)]="user.password" maxlength="30" title="V12f" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"  name="password"  required   class="form-control" type={{typeInput}} placeholder="Password" />
+      <input [(ngModel)]="user.password" maxlength="30" title="V12f" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"  name="password"  required   class="form-control"  placeholder="Password" />
     </div>
     <div class="log">
       <button (click)="signUp()" class=" button join_now btn-block">REGISTER</button>

@@ -6,7 +6,7 @@
 
       <div class="inputs">
         <input [(ngModel)]="user.email" id="username" maxlength="30"   class="form-control" type="text" placeholder="Username" />
-        <input [(ngModel)]="user.password" id="password" maxlength="30"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" required   class="form-control" type={{typeInput}} placeholder="Password" />
+        <input [(ngModel)]="user.password" id="password" maxlength="30"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" required   class="form-control"  placeholder="Password" />
         <span    class="fa fa-fw  field-icon toggle-password">
       </span>
       </div>
